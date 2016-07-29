@@ -672,6 +672,52 @@ Output:
 
 
 
+Exercise 6
+
+1.	Use switch...case to rewrite the following code:
+var customerType = "subscribed";
+var cost = 250;
+var discount = 0.1;
+if(customerType === "regular"){
+  discount = 0.1;
+}
+else if(customerType === "subscribed"){
+  discount = 0.2;
+}
+else{
+  discount = 0;
+}
+console.log("The cost of the product: " + (cost - cost * discount));
+
+
+var customerType = "subscribed";
+        var cost = 250;
+        var discount = 0.1;
+
+        switch (customerType) {
+
+            case "regular":
+                
+                discount = 0.1;
+                console.log("The cost of product: " + (cost - cost * discount));
+                break;
+
+            case "subscribed":
+               
+                discount = 0.2;
+                console.log("The cost of product: " + (cost - cost * discount));
+                break;
+
+            default:
+                discount = 0;
+                console.log("The cost of product: " + (cost - cost * discount));
+                break;
+        }
+
+
+Output:
+
+
 
 
 
