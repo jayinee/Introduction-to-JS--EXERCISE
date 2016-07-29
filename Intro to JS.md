@@ -10,7 +10,7 @@
 
 ### Q3.	Print your name to the console. Hint: Put your name in double quotation marks
 
-**Output/Anwser**
+#### Output/Anwser
 
 ![image](https://cloud.githubusercontent.com/assets/16424306/17203480/64ab05f0-54bd-11e6-9ba8-35c6736e8b7d.png)
 
@@ -672,9 +672,11 @@ Output:
 
 
 
-Exercise 6
+## Exercise 6
 
-1.	Use switch...case to rewrite the following code:
+### Q1.Use switch...case to rewrite the following code:
+
+```
 var customerType = "subscribed";
 var cost = 250;
 var discount = 0.1;
@@ -688,8 +690,11 @@ else{
   discount = 0;
 }
 console.log("The cost of the product: " + (cost - cost * discount));
+```
 
+#### Output/Answer
 
+```
 var customerType = "subscribed";
         var cost = 250;
         var discount = 0.1;
@@ -714,11 +719,83 @@ var customerType = "subscribed";
                 break;
         }
 
+```
 
 Output:
 
 
+![image](https://cloud.githubusercontent.com/assets/16424306/17236508/267fee9e-5567-11e6-8b92-74de8d8ba3ed.png)
 
+
+### Q2.Write a program that takes a grade as an input and prints %score for the grade. You can use the following table for conversion.
+
+#### Output/Answer
+```
+<body>
+    <p>please enter your grade: </p>
+    <input type="text" id="grade input" />
+    <button onclick="knowmyper()">click</button>
+    <script>
+        function knowmyper(){
+            var grades = document.getElementById('grade input').value;
+
+            switch (grades) {
+                case "A+":
+                    console.log("your % score is in between:90-100");
+                    break;
+
+                case "A":
+                    console.log("your % score is in between:85-89");
+                    break;
+
+                case "A-":
+                    console.log("your % score is in between:80-84");
+                    break;
+
+                case "B+":
+                    console.log("your % score is in between:76-79");
+                    break;
+
+                case "B":
+                    console.log("your % score is in between:72-75");
+                    break;
+
+                case "B-":
+                    console.log("your % score is in between:68-71");
+                    break;
+
+                case "C+":
+                    console.log("your % score is in between:64-67");
+                    break;
+
+                case "C":
+                    console.log("your % score is in between:60-63");
+                    break;
+
+                case "C-":
+                    console.log("your % score is in between:55-59");
+                    break;
+
+                case "D":
+                    console.log("your % score is in between:50-54");
+                    break;
+
+                case "F":
+                    console.log("your % score is in between:0-49");
+                    break;
+
+                default:
+                    console.log("please enter valid grade!!!");
+            }
+        }
+        
+    </script>
+</body>
+```
+
+
+
+![image](https://cloud.githubusercontent.com/assets/16424306/17236553/8f7205e0-5567-11e6-8f30-4ac63a64a9c3.png)
 
 
 
